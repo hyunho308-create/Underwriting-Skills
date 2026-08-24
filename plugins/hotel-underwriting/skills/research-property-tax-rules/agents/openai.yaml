@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Property Tax Rules"
+  short_description: "Research property-tax and transfer-tax rules"
+  default_prompt: "Use $research-property-tax-rules to research official property-tax rules, rate history, and major real-estate transaction taxes for this hotel."

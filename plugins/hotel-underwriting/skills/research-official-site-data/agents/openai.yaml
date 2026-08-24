@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Official Site Data"
+  short_description: "Research official-site hotel property data"
+  default_prompt: "Use $research-official-site-data to research this hotel's official-site room types and sizes, outlets, meeting space, amenities, parking, and mandatory guest fees."

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.hotel-underwriting/schemas/evidence.schema.json",
+  "title": "Hotel underwriting evidence",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "evidence_id",
+    "project_id",
+    "source_id",
+    "locator",
+    "captured_at",
+    "extraction_method"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1.0"},
+    "evidence_id": {"type": "string", "pattern": "^ev_[a-f0-9]{16}$"},
+    "project_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,63}$"},
+    "source_id": {"type": "string", "pattern": "^src_[a-f0-9]{16}$"},
+    "locator": {
+      "type": "object",
+      "required": ["kind", "value"],
+      "properties": {
+        "kind": {
+          "enum": [
+            "pdf_page",
+            "workbook_range",
+            "document_section",
+            "web_selector",
+            "image_region",
+            "other"
+          ]
+        },
+        "value": {"type": "string", "minLength": 1},
+        "label": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "excerpt": {"type": "string", "minLength": 1, "maxLength": 2000},
+    "data": {
+      "type": "object",
+      "properties": {
+        "information_primitive": {
+          "type": "object",
+          "required": ["type", "subject", "statement"],
+          "properties": {
+            "type": {"type": "string", "minLength": 1},
+            "subject": {"type": "string", "minLength": 1},
+            "statement": {"type": "string", "minLength": 1, "maxLength": 2000},
+            "attributes": {"type": "object", "additionalProperties": true}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "captured_at": {"type": "string", "format": "date-time"},
+    "extraction_method": {"enum": ["model_visual_review", "model_text_review", "deterministic"]},
+    "extensions": {"type": "object", "additionalProperties": true}
+  },
+  "additionalProperties": false
+}

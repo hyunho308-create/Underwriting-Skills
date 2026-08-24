@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.hotel-underwriting/schemas/fact.schema.json",
+  "title": "Hotel underwriting fact",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "fact_id",
+    "project_id",
+    "entity_id",
+    "field",
+    "value",
+    "evidence_ids",
+    "support_type",
+    "review_status",
+    "extracted_at",
+    "producer"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1.0"},
+    "fact_id": {"type": "string", "pattern": "^fact_[a-f0-9]{16}$"},
+    "project_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,63}$"},
+    "entity_id": {"type": "string", "pattern": "^ent_[a-f0-9]{16}$"},
+    "field": {"type": "string", "pattern": "^[a-z][a-z0-9_.]*$"},
+    "value": {},
+    "unit": {"type": "string", "minLength": 1},
+    "evidence_ids": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^ev_[a-f0-9]{16}$"}
+    },
+    "support_type": {"enum": ["direct", "calculated", "inferred"]},
+    "review_status": {"enum": ["unreviewed", "verified", "disputed", "superseded"]},
+    "effective_date": {"type": "string", "minLength": 1},
+    "derivation": {"type": "string", "minLength": 1},
+    "uncertainty_reasons": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "extracted_at": {"type": "string", "format": "date-time"},
+    "producer": {
+      "type": "object",
+      "required": ["skill", "version"],
+      "properties": {
+        "skill": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,63}$"},
+        "version": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "supersedes_fact_id": {"type": "string", "pattern": "^fact_[a-f0-9]{16}$"},
+    "extensions": {"type": "object", "additionalProperties": true}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Underwriting Folder"
+  short_description: "Initialize a project-local underwriting data layer"
+  default_prompt: "Use $create-underwriting-folder to initialize this hotel deal room."

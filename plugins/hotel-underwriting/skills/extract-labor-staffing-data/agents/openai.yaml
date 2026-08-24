@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Labor Staffing Data"
+  short_description: "Extract position-level FTEs and salaries/wages"
+  default_prompt: "Use $extract-labor-staffing-data to extract position-level FTE, wage, salary, contract-labor, and productivity evidence from this hotel data room."

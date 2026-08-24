@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Union Status"
+  short_description: "Quickly check hotels against FairHotel"
+  default_prompt: "Use $research-union-status to check these hotels against FairHotel and retain project evidence when applicable."

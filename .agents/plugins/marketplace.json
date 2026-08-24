@@ -1,0 +1,20 @@
+{
+  "name": "underwriting-skills",
+  "interface": {
+    "displayName": "Underwriting Skills"
+  },
+  "plugins": [
+    {
+      "name": "hotel-underwriting",
+      "source": {
+        "source": "local",
+        "path": "./plugins/hotel-underwriting"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

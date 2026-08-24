@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract STR Data"
+  short_description: "Convert STR workbooks into comp-set evidence"
+  default_prompt: "Use $extract-str-data to resolve the hotel's canonical name, then extract every STR comp set into source-grounded property.str evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Property Tax History"
+  short_description: "Research official hotel property tax records"
+  default_prompt: "Use $research-property-tax-history to find this hotel's parcels and report its assessed values, tax rates, bills, and payment history."

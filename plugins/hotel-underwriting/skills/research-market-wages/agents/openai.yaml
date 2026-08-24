@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Market Wages"
+  short_description: "Find local minimum and comparable hotel wages"
+  default_prompt: "Use $research-market-wages to find the applicable minimum wage and current comparable-posting wage evidence for priority hotel positions."

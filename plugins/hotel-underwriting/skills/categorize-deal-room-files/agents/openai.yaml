@@ -1,0 +1,4 @@
+interface:
+  display_name: "Categorize Deal Room Files"
+  short_description: "Categorize files with targeted ambiguity checks"
+  default_prompt: "Use $categorize-deal-room-files to categorize this deal room inventory."

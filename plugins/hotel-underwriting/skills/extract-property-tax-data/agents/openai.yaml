@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Property Tax Data"
+  short_description: "Convert data-room tax files into evidence"
+  default_prompt: "Use $extract-property-tax-data to convert local property-tax documents into source-grounded property.tax evidence."

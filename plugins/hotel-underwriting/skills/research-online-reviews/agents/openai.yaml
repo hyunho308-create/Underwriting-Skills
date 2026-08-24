@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Online Reviews"
+  short_description: "Capture raw guest-review evidence"
+  default_prompt: "Use $research-online-reviews to collect raw guest-review observations for this hotel without summarizing or analyzing them."

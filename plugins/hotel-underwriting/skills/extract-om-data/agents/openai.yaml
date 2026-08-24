@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Hotel OM Data"
+  short_description: "Convert an OM into underwriting evidence"
+  default_prompt: "Use $extract-om-data to convert the offering memorandum in this deal room into source-grounded underwriting evidence primitives."

@@ -1,0 +1,127 @@
+{
+  "catalog_version": "0.2.0",
+  "fields": {
+    "property.base_room_size": {
+      "value_type": "number",
+      "unit": "square_feet",
+      "description": "Typical size of the entry-level guestroom category"
+    },
+    "property.average_room_size": {
+      "value_type": "number",
+      "unit": "square_feet",
+      "description": "Average area of all guestrooms as reported or calculated"
+    },
+    "property.amenities": {
+      "value_type": "array",
+      "description": "Guest amenities and hotel facilities, excluding separately recorded food-and-beverage outlets"
+    },
+    "property.brand.current": {
+      "value_type": "string",
+      "description": "Current hotel brand or franchise affiliation"
+    },
+    "property.brand_history": {
+      "value_type": "array",
+      "description": "Chronological brand, flag, or franchise history supported by the sources"
+    },
+    "property.food_and_beverage.outlets": {
+      "value_type": "array",
+      "description": "Current hotel food-and-beverage outlets and source-supported operating details"
+    },
+    "property.gross_building_area": {
+      "value_type": "number",
+      "unit": "square_feet",
+      "description": "Gross building area of the hotel improvements"
+    },
+    "property.keys": {
+      "value_type": "integer",
+      "unit": "rooms",
+      "description": "Total rentable guestroom keys"
+    },
+    "property.land_area": {
+      "value_type": "number",
+      "unit": "acres",
+      "description": "Land area associated with the hotel property"
+    },
+    "property.manager.current": {
+      "value_type": "string",
+      "description": "Current hotel manager or operating company"
+    },
+    "property.manager_history": {
+      "value_type": "array",
+      "description": "Chronological hotel manager or operator history supported by the sources"
+    },
+    "property.meeting_space.breakout": {
+      "value_type": "array",
+      "description": "Meeting and event venues with reported area and capacity"
+    },
+    "property.meeting_space.behind_doors_total_area": {
+      "value_type": "number",
+      "unit": "square_feet",
+      "description": "Non-overlapping enclosed ballroom, meeting-room, and boardroom area excluding subdivisions already represented by a parent, prefunction space, food-and-beverage outlets, terraces, and outdoor venues"
+    },
+    "property.meeting_space.space_inventory": {
+      "value_type": "array",
+      "description": "Cvent or floorplan venue inventory with space type, area, containment role, behind-doors eligibility, and counting status"
+    },
+    "property.meeting_space.total_area": {
+      "value_type": "number",
+      "unit": "square_feet",
+      "description": "Total indoor and outdoor meeting and event area when reported as one figure"
+    },
+    "property.meeting_space.venue_count": {
+      "value_type": "integer",
+      "unit": "venues",
+      "description": "Number of meeting and event venues"
+    },
+    "property.other_operated_departments": {
+      "value_type": "array",
+      "description": "Other operated departments or ancillary hotel operations identified by the source"
+    },
+    "property.ownership_history": {
+      "value_type": "array",
+      "description": "Chronological ownership history supported by the sources"
+    },
+    "property.ownership_interest": {
+      "value_type": "string",
+      "description": "Reported form of ownership interest, such as fee simple or leasehold"
+    },
+    "property.renovation_history": {
+      "value_type": "array",
+      "description": "Renovation events with source-supported timing, cost, and scope"
+    },
+    "property.room_type_matrix": {
+      "value_type": "array",
+      "description": "Guestroom types with reported counts and room sizes"
+    },
+    "property.double_room_count": {
+      "value_type": "integer",
+      "unit": "rooms",
+      "description": "Guestrooms explicitly reported as doubles, double/doubles, or rooms with two beds"
+    },
+    "property.suite_count": {
+      "value_type": "integer",
+      "unit": "rooms",
+      "description": "Total guestrooms marketed and counted as suites"
+    },
+    "property.union.start_year": {
+      "value_type": "integer",
+      "unit": "year",
+      "description": "Year the hotel first became unionized, when the source explicitly supports it"
+    },
+    "property.union.status": {
+      "value_type": "boolean",
+      "description": "Whether the hotel is currently unionized"
+    },
+    "property.year_built": {
+      "value_type": "integer",
+      "unit": "year",
+      "description": "Original year the hotel opened or was constructed, as defined by the supporting evidence"
+    },
+    "property.year_renovated": {
+      "value_type": "integer",
+      "unit": "year",
+      "description": "Most recently reported completed renovation year"
+    }
+  },
+  "extension_prefix": "custom."
+}

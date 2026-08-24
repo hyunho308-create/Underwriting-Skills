@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Renovation CapEx Data"
+  short_description: "Extract major hotel renovation spend evidence"
+  default_prompt: "Use $extract-renovation-capex-data to extract major historical renovation scope, timing, and spend from this hotel deal room."

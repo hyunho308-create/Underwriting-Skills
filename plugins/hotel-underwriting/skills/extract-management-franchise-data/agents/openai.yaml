@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Management and Franchise Data"
+  short_description: "Extract management and franchise agreement terms"
+  default_prompt: "Use $extract-management-franchise-data to extract source-grounded property.manager and property.brand evidence from hotel agreement packages."

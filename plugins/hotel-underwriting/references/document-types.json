@@ -1,0 +1,154 @@
+{
+  "catalog_version": "0.3.0",
+  "scope": "initial_hotel_underwriting",
+  "document_types": [
+    {
+      "id": "marketing.offering_materials",
+      "definition": "Investment-sale materials such as a full offering memorandum, teaser, short sale brochure, or supplemental package prepared to market the hotel for sale.",
+      "boundary": "Exclude hotel operating sales collateral for weddings, meetings, banquets, guestrooms, or events."
+    },
+    {
+      "id": "financials.operating_statement",
+      "definition": "Historical or current hotel operating results, including detailed and summary profit-and-loss or income statements."
+    },
+    {
+      "id": "financials.balance_sheet",
+      "definition": "A hotel or related entity balance sheet or statement of assets, liabilities, and equity."
+    },
+    {
+      "id": "financials.budget",
+      "definition": "A management-approved or proposed operating budget for a future or current period."
+    },
+    {
+      "id": "financials.forecast",
+      "definition": "A forecast, reforecast, or actual-plus-forecast view of hotel operating results."
+    },
+    {
+      "id": "financials.rent_roll",
+      "definition": "A rent roll, tenant-income schedule, or lease-income summary."
+    },
+    {
+      "id": "financials.other",
+      "definition": "Other financial or accounting records used in underwriting, including general ledgers, trial balances, account detail, and similar supporting schedules.",
+      "boundary": "Use a more specific financials type whenever the metadata supports one."
+    },
+    {
+      "id": "performance.str_report",
+      "definition": "An STR or STAR report containing hotel and competitive-set performance."
+    },
+    {
+      "id": "performance.market_reports",
+      "definition": "A general lodging-market, city, or submarket report or dataset covering performance, supply, demand, transactions, or market conditions.",
+      "boundary": "Exclude STR or STAR reports, which belong in performance.str_report, and investment-sale offering materials."
+    },
+    {
+      "id": "performance.pace_report",
+      "definition": "A group, catering, banquet, transient, or corporate booking pace report."
+    },
+    {
+      "id": "performance.operating_metrics",
+      "definition": "Hotel operating-performance schedules such as room-level ADR or occupancy, segmentation, account production, or revenue metrics that are neither STR nor pace reports."
+    },
+    {
+      "id": "performance.ood",
+      "definition": "Operating or financial performance information for other operated departments such as a golf course, spa, club, marina, or similar hotel facility.",
+      "boundary": "Exclude hotel-wide operating statements and third-party contracts governing an operated department."
+    },
+    {
+      "id": "property.room_inventory",
+      "definition": "A room matrix, room-type breakdown, key-count schedule, or other inventory of guestrooms or units."
+    },
+    {
+      "id": "property.plan_or_layout",
+      "definition": "A floor plan, property map, meeting-space diagram, capacity layout, or similar physical plan."
+    },
+    {
+      "id": "property.survey",
+      "definition": "A land, boundary, site, or similar property survey."
+    },
+    {
+      "id": "property.third_party_reports",
+      "definition": "A third-party property diligence report such as a property-condition report, property-condition assessment, Phase I or Phase II environmental assessment, engineering report, or similar specialist report."
+    },
+    {
+      "id": "property.photo",
+      "definition": "A photograph or image whose primary purpose is to depict the property."
+    },
+    {
+      "id": "property.property_information",
+      "definition": "General property information used in initial underwriting that does not fit room inventory, plans, surveys, or photos, including equipment schedules and property data packages."
+    },
+    {
+      "id": "capital.capex_history",
+      "definition": "Historical capital expenditures, completed renovation spending, or prior capital-investment summaries."
+    },
+    {
+      "id": "capital.capex_plan",
+      "definition": "A forward capital plan, renovation budget, property improvement plan, displacement analysis, or proposed value-add project."
+    },
+    {
+      "id": "agreements.management_agreement",
+      "definition": "A hotel management or operating agreement, including related amendments, notices, and term sheets."
+    },
+    {
+      "id": "agreements.franchise_agreement",
+      "definition": "A hotel franchise, license, or brand agreement, including related amendments and term sheets."
+    },
+    {
+      "id": "agreements.rental_management_agreement",
+      "definition": "A rental-management agreement governing individually owned hotel units or a related rental program."
+    },
+    {
+      "id": "agreements.condo",
+      "definition": "Condominium or owners-association governance documents, including declarations, CC&Rs, bylaws, HOA documents, rules, and related amendments.",
+      "boundary": "Exclude agreements governing an optional hotel-unit rental program, which belong in agreements.rental_management_agreement."
+    },
+    {
+      "id": "agreements.union_agreement",
+      "definition": "A collective bargaining agreement, memorandum of agreement, memorandum of understanding, settlement, or related union agreement."
+    },
+    {
+      "id": "agreements.lease",
+      "definition": "A tenant, retail, restaurant, ground, submerged-land, antenna, equipment, or similar lease, including amendments, renewals, consents, and guaranties."
+    },
+    {
+      "id": "agreements.service_contract",
+      "definition": "A third-party service or operating contract used by the hotel."
+    },
+    {
+      "id": "agreements.other",
+      "definition": "An identifiable agreement or related amendment that does not fit another controlled agreement type.",
+      "boundary": "Use a more specific agreements type whenever the document's purpose supports one."
+    },
+    {
+      "id": "tax.property_tax",
+      "definition": "Property-tax bills, histories, assessments, returns, projections, calculations, or related supporting schedules."
+    },
+    {
+      "id": "labor.staffing",
+      "definition": "Staffing, FTE, employee census, payroll summary, wage analysis, union-hours, contract-labor, salaries-and-wages detail, or organization-chart information.",
+      "boundary": "Exclude collective-bargaining agreements, MOAs, MOUs, grievance settlements, and other union agreements; classify those as agreements.union_agreement."
+    },
+    {
+      "id": "financing.debt_terms",
+      "definition": "Acquisition-financing terms, debt guidance, lender summaries, or financing memoranda."
+    },
+    {
+      "id": "transaction.deal_process",
+      "definition": "Transaction-administration materials such as confidentiality agreements, process letters, letters of intent, purchase-and-sale documents, diligence checklists, and diligence requests."
+    },
+    {
+      "id": "analysis.underwriting_model",
+      "definition": "A buyer, seller, broker, or lender underwriting, valuation, or DCF model."
+    },
+    {
+      "id": "analysis.internal_analysis",
+      "definition": "Buyer-created or internal analysis such as a SWOT analysis, business plan, investment-committee presentation, or analytical memo."
+    },
+    {
+      "id": "unknown",
+      "definition": "The metadata does not support a defensible type in the initial-underwriting catalog, or the file appears outside this catalog's scope.",
+      "boundary": "Always explain the ambiguity or missing information in uncertainty_reasons."
+    }
+  ]
+}

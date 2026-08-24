@@ -1,0 +1,31 @@
+{
+  "name": "hotel-underwriting",
+  "version": "0.1.0",
+  "description": "Modular, source-backed hotel underwriting workflows",
+  "author": {
+    "name": "KHP Capital Partners",
+    "url": "https://github.com/hyunho308-create"
+  },
+  "homepage": "https://github.com/hyunho308-create/Underwriting-Skills",
+  "repository": "https://github.com/hyunho308-create/Underwriting-Skills",
+  "keywords": [
+    "hotel",
+    "underwriting",
+    "due-diligence",
+    "real-estate"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Hotel Underwriting",
+    "shortDescription": "Build traceable hotel underwriting analyses.",
+    "longDescription": "Turn hotel deal-room files and research into reusable, source-backed evidence for hotel underwriting.",
+    "developerName": "KHP Capital Partners",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Create an underwriting folder and inventory this hotel deal room.",
+      "Extract available underwriting evidence from this hotel deal room.",
+      "Research current online evidence for this hotel."
+    ]
+  }
+}

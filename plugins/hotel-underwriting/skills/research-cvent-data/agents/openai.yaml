@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Cvent Data"
+  short_description: "Extract verified meeting-space and room data"
+  default_prompt: "Use $research-cvent-data to research this hotel's Cvent venue listing and stage non-overlapping meeting-space and room-inventory evidence."

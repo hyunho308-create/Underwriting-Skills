@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inventory Deal Room Files"
+  short_description: "Create a traceable local deal-room source manifest"
+  default_prompt: "Use $inventory-deal-room-files to inventory this hotel deal room."

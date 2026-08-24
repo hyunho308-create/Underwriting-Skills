@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Booking Pace Data"
+  short_description: "Convert pace reports into booking insights"
+  default_prompt: "Use $extract-booking-pace-data to extract source-grounded property.pace evidence from the local pace reports."
